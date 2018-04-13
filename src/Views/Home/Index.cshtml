@@ -1,0 +1,13 @@
+@model string
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h5>
+    @Model
+</h5>
+<div id="react-app">Loading...</div>
+
+@section scripts {
+    <script src="~/dist/main.js" asp-append-version="true"></script>
+}
